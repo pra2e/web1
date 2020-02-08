@@ -2,25 +2,44 @@
 <html>
   <head>
     <title>Kyeong's Journey - CSS</title>
+    <!-- CSS method of modifying the anchor tag font -->
+    <style> /* Style TAG (CSS) */
+      /* NOTE: Selector Priority --- id > class > tag */
+      a {       /* Selector: (select all <a> tag in the code )*/
+        color: black;           /* Property Declaration: Change font color */
+        text-decoration: none;  /* Property Declaration: Remove underline */
+      }
+      h1 {      /* Selector: (select all <h1> tag in the code)*/
+        text-align: center;   /* Property Declaration: Center align */
+        font-size: 50px;      /* Property Declaration: Change font size */
+        border-bottom: 1px solid gray;
+        margin: 0;
+        padding: 20px;
+      }
+      ol {
+        border-right: 1px solid gray;
+        width: 100px;
+        margin: 0;
+        padding: 20px;
+      }
+      body {
+        margin: 0;
+      }
+      .saw {    /* Selector: (select all "saw" class in the code)*/
+        color:gray;
+      }
+      #active { /* Selector: (Select all "active" id in the code)*/
+        /* NOTE: id must be unique for a single line... cannot be used again */
+        color:red;
+      }
+    </style>
   </head>
 
   <body>
-    <!-- CSS method of modifying the anchor tag font -->
-    <style> /* Style TAG (CSS) */
-      a {   /* Selector: (select all <a> tag in the code )*/
-        color: black;           /* Property Declaration: Change font color */
-        text-decoration: none; /* Property Declaration: Remove underline */
-      }
-      h1 {  /* Selector: (select all <h1> tag in the code)*/
-        text-align: center;   /* Property Declaration: Center align */
-        font-size: 50px;      /* Property Declaration: Change font size */
-      }
-    </style>
-
     <h1><a href="home.html">WEB</font></a></h1>
     <ol>
-      <li><a href="page1.html">HTML</a></li>
-      <li><a href="page2.html" style="color:red;text-decoration:underline">CSS</a></li> <!-- Style ATTRIBUTE (HTML) -->
+      <li><a href="page1.html" class="saw">HTML</a></li>
+      <li><a href="page2.html" class="saw" id="active">CSS</a></li> <!-- Style ATTRIBUTE (HTML) -->
       <li><a href="page3.html">JavaScript</a></li>
     </ol>
 
