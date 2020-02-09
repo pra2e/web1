@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-utf-8">
     <title>Kyeong's Journey - CSS</title>
     <!-- CSS method of modifying the anchor tag font -->
     <style> /* Style TAG (CSS) */
@@ -21,6 +22,7 @@
         width: 100px;
         margin: 0;
         padding: 20px;
+        padding-left: 35px;
       }
       body {
         margin: 0;
@@ -28,32 +30,46 @@
       .saw {    /* Selector: (select all "saw" class in the code)*/
         color:gray;
       }
-      #active { /* Selector: (Select all "active" id in the code)*/
+      #active_page { /* Selector: (Select all "active" id in the code)*/
         /* NOTE: id must be unique for a single line... cannot be used again */
-        color:red;
+        color:green;
       }
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #article {
+        padding-left: 35px;
+      }
+      @media(max-width:800px) {
+        
+      }
+
     </style>
   </head>
 
   <body>
     <h1><a href="home.html">WEB</font></a></h1>
-    <ol>
-      <li><a href="page1.html" class="saw">HTML</a></li>
-      <li><a href="page2.html" class="saw" id="active">CSS</a></li> <!-- Style ATTRIBUTE (HTML) -->
-      <li><a href="page3.html">JavaScript</a></li>
-    </ol>
+    <div id="grid">
+      <ol>
+        <li><a href="page1.html">HTML</a></li>
+        <li><a href="page2.html" id="active_page">CSS</a></li> <!-- Style ATTRIBUTE (HTML) -->
+        <li><a href="page3.html">JavaScript</a></li>
+      </ol>
 
-    <!-- HTML method of modifying the anchor tag font
-    <h1><a href="home.html"><font color="red"> WEB </font></a></h1>
-    <ol>
-      <li><a href="page1.html"><font color="red">HTML</font></a></li>
-      <li><a href="page2.html"><font color="red">CSS</font></a></li>
-      <li><a href="page3.html"><font color="red">JavaScript</font></a></li>
-    </ol>
-  -->
-
-    <h2>CSS</h2>
-    CSS: Cascading Style Sheets
-
+      <!-- HTML method of modifying the anchor tag font
+      <h1><a href="home.html"><font color="red"> WEB </font></a></h1>
+      <ol>
+        <li><a href="page1.html"><font color="red">HTML</font></a></li>
+        <li><a href="page2.html"><font color="red">CSS</font></a></li>
+        <li><a href="page3.html"><font color="red">JavaScript</font></a></li>
+      </ol>
+      -->
+      <div id="article">
+        <h2>CSS</h2>
+        CSS: Cascading Style Sheets... is a style sheet language used for describing the
+        presentation of a document written in a markup language.
+      </div>
+    </div>
   </body>
 </html>
