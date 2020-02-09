@@ -1,0 +1,47 @@
+/* NOTE: Selector Priority --- id > class > tag */
+a {       /* Selector: (select all <a> tag in the code )*/
+  color: black;           /* Property Declaration: Change font color */
+  text-decoration: none;  /* Property Declaration: Remove underline */
+}
+h1 {      /* Selector: (select all <h1> tag in the code)*/
+  text-align: center;   /* Property Declaration: Center align */
+  font-size: 50px;      /* Property Declaration: Change font size */
+  border-bottom: 1px solid gray;
+  margin: 0;
+  padding: 20px;
+}
+ol {
+  border-right: 1px solid gray;
+  width: 100px;
+  margin: 0;
+  padding: 20px;
+  padding-left: 35px;
+}
+body {
+  margin: 0;
+}
+.saw {    /* Selector: (select all "saw" class in the code)*/
+  color:gray;
+}
+#active_page { /* Selector: (Select all "active" id in the code)*/
+  /* NOTE: id must be unique for a single line... cannot be used again */
+  color:green;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#article {
+  padding-left: 35px;
+}
+@media(max-width:800px) {
+  #grid {
+    display: block;
+  }
+  ol {
+    border-right: none;
+  }
+  h1 {
+    border-bottom: none;
+  }
+}
