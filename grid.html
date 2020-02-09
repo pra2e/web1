@@ -4,12 +4,23 @@
     <title> SAMPLE TITLE </title>
 
     <style>
+      div {
+        border: 5px solid gray;
+      }
+      #gridExample {
+        border: 5px solid pink;
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
 
     </style>
-
   </head>
 
   <body>
-    NAVIGATION ARTICLE
+
+    <div id="gridExample">
+      <div>NAVIGATION</div>
+      <div>ARTICLE</div>
+  </div>
   </body>
 </html>
