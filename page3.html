@@ -9,6 +9,16 @@
 
   <body>
     <h1><a href="home.html">WEB</a></h1>
+    <input type="button" value="dark" onclick="
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white';
+
+    ">
+    <input type="button" value="light" onclick="
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+    ">
+
     <div id="grid">
       <ol>
         <li><a href="page1.html">HTML</a></li>

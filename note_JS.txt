@@ -1,0 +1,42 @@
+===================== JavaScript Note ======================
+Run JavaScript
+	- Event Handler
+		- user-interaction... (dialog box in DOORS DXL)
+		- Ex. <input type="button" value="hi" onclick="alert('hellooo')">
+		- Ex. <input type="text" onchange="alert('changed')">
+
+	- <script>
+		- HTML tag for JavaScript
+
+	- console
+		- Quick/dirty way to run JavaScript code from browser's inspect
+
+
+DataType
+	- Number (i.e. Integer)
+		- Only ONE type of number in JS
+		- Use all operators of + - * /
+
+	- String
+		- Use single OR double quote
+		- index = start from 0
+		- String concatenation ---> "dummy" + "stupid" + "123"
+		- Use string properties...
+			- Ex. "dummyString".toUpperCase()
+			- Ex. "dummyString".indexOf('u')
+	
+	- Variable
+		- Use "var" for both int and string
+		- var ___ = "asdasd";
+
+
+Web Browser
+	- document.querySelector()
+
+Statement
+	- Conditional Statement
+	- Loop Statement
+	- Loop & Array
+	- Loop & Object
+	- Property & Method
+
