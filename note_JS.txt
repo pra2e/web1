@@ -29,14 +29,45 @@ DataType
 		- Use "var" for both int and string
 		- var ___ = "asdasd";
 
+	- Boolean
+		
 
 Web Browser
 	- document.querySelector()
+		- Returns the first element that matches a specified CSS selector(s) in the document
+	- document.querySelectorAll()
+		- Returns ALL elements in the document that matches a specified CSS selector(s)
 
 Statement
 	- Conditional Statement
-	- Loop Statement
+		- less than (HTML) ---> "&lt;"
+		- less than (JS) ---> "<"
+		- greater than (HTML) ---> "gt;"
+		- greater than (JS) ---> ">"
+		- equals ---> "==="
+		- IF Statement
+			- Execute code only if true
+
 	- Loop & Array
-	- Loop & Object
-	- Property & Method
+		var dummyArr = ["apple", "banana"];
+		var app = dummyArr[0];
+		var i = 0;
+		while(i < dummyArr.length) {
+			document.write(dummyArr[i]);
+			i = i + 1;
+		}
+
+	- Function
+		- function dummyFunc(input) {
+			...input = ...
+			.. return ...
+		  }
+
+
+	- Object
+		- 
+
+
+
+
 
