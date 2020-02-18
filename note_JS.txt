@@ -65,9 +65,31 @@ Statement
 
 
 	- Object
-		- 
+		- JS Objects are containers for named values called properties or methods
+		- Define/create object
+			var car = {type:"compact sedan", model:"mazda3", color:"white", year:2018};
+		1. Object properties
+			- The name:values pair in JS object
+			- Accessing Object properties
+				- objectName.propertyName    OR    objectName["propertyName"]
+		2. Object methods
+			- The actions that can be performed on objects
+			- Methods are stored in properties as function definitions
+				var person = {firstName":"Eric", lastName:"Bae", 
+					fullName: function() {
+					return this.firstName + " " + this.lastname;
+					}
+				}
+			- Accessing Object methods
+				- objectName.methodName() 
+	
+	- Library and Framework
+		- Library
+			- jQuery (allows shortcuts for JS...)
 
-
-
-
+	- UI and API
+		- UI = User Interface
+		
+		- API = Application Programming Interface
+			- ex. the google chrome pop-up of alert() is a built in API...
 
